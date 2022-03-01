@@ -14,7 +14,7 @@ body {
   padding: 1em;
   font-size: clamp(0.5rem, 2.5vmin, 1.5rem);
 }
-
+/* KEYBOARD DISPLAY SETTINGS */
 .keyboard {
   display: grid;
   grid-template-columns: repeat(20, minmax(auto, 1.25em));
@@ -72,4 +72,24 @@ body {
   --hue: 115;
   --saturation: 29%;
   --lightness: 43%;
+}
+/* GRID DISPLAY SETTINGS */
+.guess-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  flex-grow: 1;
+  grid-template-columns: repeat(5, 4em);
+  grid-template-rows: repeat(6, 4em);
+  gap: 0.25em;
+  margin-bottom: 1em;
+}
+
+.tile {
+  font-size: 2em;
+  color: white;
+  border: 0.05em solid hsl(240, 2%, 23%);
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline;
 }
